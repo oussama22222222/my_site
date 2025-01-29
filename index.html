@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background: url('image/ai-generated-beautuful-fast-food-background-with-copy-space-free-photo.jpg') no-repeat center center/cover fixed;
+        animation: image 12s linear 1 forwards;
+    }
+
+   
+
+    .bod {
+        position: relative;
+        left: 50%;
+        width: 120px;
+        height: 120px;
+
+    }
+
+    .bod img {
+        width: 92%;
+        height: 92%;
+        border-radius: 50%;
+    }
+
+    .circle {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#33ccff, #ff0066);
+        border-radius: 50%;
+        animation: osma 0.5s linear infinite;
+        filter: blur(10px);
+        z-index: -1;
+    }
+
+    .hero {
+        text-align: center;
+        width: 50%;
+        color: rgb(226, 222, 217);
+        padding: 5rem 0;
+        font-style: italic;
+        font-size: 35px;
+        font-weight: bold;
+        height: 200px;
+        position: relative;
+
+    }
+
+    .hero h1 {
+        font-size: 90px;
+        animation: os 13s ease-in-out;
+    }
+
+    .hero h2,
+    .hero p {
+        animation: os 2s ease-in-out;
+    }
+
+    @keyframes os {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes osma {
+        form {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes image {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 700px) {
+        body {
+            overflow: auto;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: end;
+            font-size: 25px;
+            width: 100%;
+            padding: 1rem 0;
+            z-index: -1;
+        }
+
+        .hero .vv {
+            width: 80%;
+            
+        }
+
+        .bod {
+            left: 0;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+        }
+
+        .body img {
+            width: 80%;
+            height: 80%;
+        }
+    }
+</style>
+
+<body>
+    
+    <header>
+        <h1 class="h11">RS</h1>
+        <nav>
+            <ul class="ul1">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li>
+                    <a href="#">MENU</a>
+                    <ul>
+                        <li><a href="menuf.html">food fast</a></li>
+                        <li><a href="Menu.html">Food</a></li>
+                        <li><a href="menuj.html">Juice</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero">
+        <div class="vv">
+            <div class="bod">
+                <img src="image/ooooo.jpg" alt="">
+                <div class="circle"></div>
+            </div>
+            <h2>Bienvenue dans notre restaurant</h2>
+            <p>Les meilleurs plats rien que pour vous.</p>
+            <h1>RS</h1>
+        </div>
+    </section>
+</body>
+
+</html>
